@@ -1,0 +1,44 @@
+{
+  "@id": "fastq-zip-asset-001",
+  "@type": "Asset",
+  "properties": {
+    "name": "Genomic sequencing dataset (FASTQ + clinical metadata)",
+    "description": "Paired dataset including raw sequencing reads (FASTQ) and anonymized patient metadata (CSV)",
+    
+    "fileFormat": "application/zip",
+    "contains": "FASTQ, CSV",
+
+    "dataType": "genomic sequencing data",
+    "modality": "NGS",
+
+    "organism": "Homo sapiens",
+    "sampleType": "blood",
+    "sequencingPlatform": "Illumina",
+    "readType": "paired-end",
+
+    "dataSize": "1GB",
+    "compression": "zip",
+
+    "anonymization": "pseudonymized",
+    "containsPersonalData": "yes",
+    "gdprCategory": "health data",
+
+    "patientMetadataIncluded": "yes",
+    "clinicalVariables": [
+      "age",
+      "sex",
+      "diagnosis",
+      "treatment_status"
+    ],
+
+    "provenance": "Hospital X",
+    "collectionDate": "2026-03",
+    "processingPipeline": "FASTQ generation via Illumina pipeline",
+
+    "license": "restricted",
+    "accessLevel": "controlled",
+
+    "id": "fastq-zip-asset-001",
+    "contenttype": "application/zip"
+  }
+}
