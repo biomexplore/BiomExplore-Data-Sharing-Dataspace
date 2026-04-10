@@ -12,6 +12,8 @@ The goal is to allow different organizations (e.g., sequencing labs and bioinfor
 * Data sovereignty
 * Controlled access
 * Policy-based data usage
+  
+![fastq_dataspace_diagram5](https://github.com/user-attachments/assets/ccb47998-ff13-4d44-9e5f-af73a7311344)
 
 ---
 
