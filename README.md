@@ -1,4 +1,3 @@
-# BiomExplore-Federated-Genomic-Data-Sharing-Dataspace
 
 ---
 
@@ -6,7 +5,7 @@
 
 ## **Overview**
 
-BiomExplore is a project designed to enable **secure, federated sharing of genomic sequencing data (FASTQ files)** using a **dataspace architecture** based on **Eclipse Dataspace Components (EDC)**.
+BiomExplore Dataspace is a project designed to enable **secure, federated sharing of genomic sequencing data (FASTQ files)** using a **dataspace architecture** based on **Eclipse Dataspace Components (EDC)**.
 
 The goal is to allow different organizations (e.g., sequencing labs and bioinformatics platforms) to **share data without centralizing it**, ensuring:
 
