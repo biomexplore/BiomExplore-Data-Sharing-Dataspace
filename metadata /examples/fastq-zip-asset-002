@@ -1,0 +1,20 @@
+{
+  "@id": "fastq-zip-asset-002",
+  "@type": "Asset",
+  "properties": {
+    "name": "FASTQ ZIP package",
+    "fileFormat": "zip",
+    "contains": "FASTQ,CSV",
+    "description": "ZIP containing a FASTQ file and a CSV file",
+    "id": "fastq-zip-asset-002",
+    "contenttype": "application/zip"
+  },
+  "dataAddress": {
+    "@type": "DataAddress",
+    "type": "HttpData",
+    "baseUrl": "http://144.91.68.127:8080/sample-5.zip"
+  },
+  "@context": [
+    "https://w3id.org/edc/connector/management/v0.0.1"
+  ]
+}
