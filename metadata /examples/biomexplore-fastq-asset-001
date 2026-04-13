@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "odrl": "http://www.w3.org/ns/odrl/2/"
+  },
+  "@id": "biomexplore-fastq-asset-001",
+  "@type": "Asset",
+  "properties": {
+    "dct:identifier": "BIOEXP-FASTQ-001",
+    "dct:title": "Genomic sequencing dataset - FASTQ + clinical metadata",
+    "dct:description": "ZIP package containing raw sequencing reads in FASTQ format and anonymized clinical metadata in CSV format for controlled research use.",
+    "dct:publisher": "BioMExplore Connector",
+    "dct:language": "en",
+    "dct:issued": "2026-04-01",
+    "dct:modified": "2026-04-01",
+
+    "dcat:keyword": [
+      "genomics",
+      "FASTQ",
+      "NGS",
+      "clinical metadata",
+      "biomedical research"
+    ],
+
+    "datasetId": "BIOEXP-FASTQ-001",
+    "datasetVersion": "v1",
+    "hospitalId": "hospital-a",
+    "providerConnector": "https://providerbiomexplore-ds-connector-1.iisgaliciasur.es/",
+    "sourceOrganization": "Hospital A - Genomics Unit",
+
+    "dataType": "genomic sequencing data",
+    "organism": "Homo sapiens",
+    "sampleType": "blood",
+    "sequencingPlatform": "Illumina",
+    "readType": "paired-end",
+    "readLength": "150bp",
+    "qualityEncoding": "Phred+33",
+
+    "contains": [
+      "FASTQ",
+      "CSV"
+    ],
+    "clinicalVariables": [
+      "age_range",
+      "sex",
+      "diagnosis",
+      "treatment_status"
+    ],
+
+    "anonymizationStatus": "pseudonymized",
+    "containsPersonalData": "yes",
+    "gdprCategory": "health data",
+    "accessLevel": "controlled",
+    "license": "restricted",
+
+    "distributionType": "ZIP",
+    "contenttype": "application/zip",
+    "compression": "zip",
+    "originalFileName": "sample-5.zip",
+    "byteSize": 1114394653,
+    "checksum": "sha256:REPLACE_WITH_REAL_HASH"
+  },
+  "dataAddress": {
+    "@type": "DataAddress",
+    "type": "HttpData",
+    "baseUrl": "https://providerbiomexplore-ds-connector-1.iisgaliciasur.es/sample-5.zip"
+  },
+  "policy": {
+    "@type": "odrl:Set",
+    "odrl:permission": [
+      {
+        "odrl:action": "odrl:use",
+        "odrl:constraint": [
+          {
+            "odrl:leftOperand": "odrl:dateTime",
+            "odrl:operator": {
+              "@id": "odrl:lt"
+            },
+            "odrl:rightOperand": "2026-12-31T23:59:59Z"
+          },
+          {
+            "odrl:leftOperand": "membershipRole",
+            "odrl:operator": {
+              "@id": "odrl:eq"
+            },
+            "odrl:rightOperand": "researcher"
+          }
+        ]
+      }
+    ]
+  }
+}
