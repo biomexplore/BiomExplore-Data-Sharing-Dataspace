@@ -1,1 +1,22 @@
-
+{
+  "@id": "timer-policy",
+  "@type": "PolicyDefinition",
+  "createdAt": 1775034762739,
+  "policy": {
+    "@id": "382b41f7-8c26-4bbc-91f6-62ad1863d4fa",
+    "@type": "Set",
+    "permission": {
+      "action": "use",
+      "constraint": {
+        "leftOperand": "inForceDate",
+        "operator": "lt",
+        "rightOperand": "2026-04-01T09:13:00Z"
+      }
+    },
+    "prohibition": [],
+    "obligation": []
+  },
+  "@context": [
+    "https://w3id.org/edc/connector/management/v0.0.1"
+  ]
+}
